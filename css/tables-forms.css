@@ -1,0 +1,192 @@
+/* TABLE STYLES */
+table {
+    color: rgb(10, 10, 10);
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tbl-col-item {
+    width: 60%;
+}
+
+.tb-col-quant {
+    width: 20%;
+}
+
+.tbl-col-price {
+    width: 20%;
+}
+
+table th,
+table td {
+    border: 1px solid orange;
+    padding: 10px;
+    vertical-align: top;
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: bisque;
+}
+
+table tbody tr:nth-child(odd) td {
+    background-color: lightyellow;
+}
+
+table th {
+    text-align: left;
+    font-weight: normal;
+    background: linear-gradient(to bottom, lightyellow, orange);
+    color: rgb(25, 25, 25);
+}
+
+table.grocery-list tr :nth-child(2),
+table.grocery-list tr :nth-child(3) {
+    text-align: center;
+}
+/* END TABLE STYLES */
+
+/* START FORM STYLES */
+form {
+    background: lightyellow;
+    padding: 20px 20px;
+    border-radius: 15px;
+    color: rgb(25, 25, 25);
+    border: 1px solid rgb(25, 25, 25);
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input,
+select {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 100%;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    display: block;
+    background-color: lightyellow;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 15px;
+    border: 1px solid orange;
+    outline: none;
+    color: rgb(25, 25, 25);
+    transition: 0.5s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus {
+    border: 1px solid rgb(25, 25, 25);
+    background-color: white;
+    box-shadow: inset 0px 0px 5px rgba(25, 25, 25, 0.6);
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover {
+    border: 1px solid rgb(10, 10, 10);
+    background-color: white;
+    box-shadow: inset 0px 0px 5px rgba(25, 25, 25, 0.6);
+}
+select {
+    border: 1px solid rgb(10, 10, 10);
+}
+
+input:valid {
+    border-color: rgb(10, 10, 10);
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: lightyellow;
+    color: rgb(25, 25, 25);
+    padding: 10px 0;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: orange;
+    border: 1px solid rgb(10, 10, 10);
+    color: rgb(10, 10, 10);
+}
+
+.checkbox {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox > span {
+    color: rgb(10, 10, 10);
+    padding: 2px 0 0 5px;
+}
+
+.checkbox > input {
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid orange;
+    transition-duration: 0.5s;
+    background-color: lightyellow;
+    cursor: pointer;
+}
+
+.checkbox > input:checked {
+    background-color: orange;
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.checkbox > input:hover {
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.checkbox > input:checked + span::before {
+    content: "\2713";
+    display: block;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    position: absolute;
+    left: 8px;
+    top: 0;
+}
+
+.checkbox > input:active {
+    border: 5px solid rgb(10, 10, 10);
+}
+
+/* END FORM STYLES */

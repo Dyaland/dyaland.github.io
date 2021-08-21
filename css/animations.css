@@ -1,0 +1,20 @@
+/* The a.active nav button grows from :hover to :active */
+.site-nav a.active {
+    animation: nav-box-size 0.55s;
+}
+
+@keyframes nav-box-size {
+    from {
+        border-top: 5px solid rgb(25, 25, 25);
+        border-right: 5px solid rgb(25, 25, 25);
+        border-left: 5px solid rgb(25, 25, 25);
+        font-size: 16px;
+    }
+
+    to {
+        border-top: 0px solid rgba(25, 25, 25, 1);
+        border-right: 0px solid rgb(25, 25, 25);
+        border-left: 0px solid rgb(25, 25, 25);
+        font-size: 18px;
+    }
+}
